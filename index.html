@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traveller blog viaggi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md fs-4 fixed-top bg-info">
+        <div class="container-fluid">
+
+            <img src="./img/travelling_10123296.png" alt="">
+            <h1 class="nomepagina"> Traveller</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-ranking-star"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav w-50 justify-content-between ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prenota">Prenota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contatti</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Lasciati ispirare
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#meta anno">le migliori mete dell'anno</a></li>
+                            <li><a class="dropdown-item" href="#">viaggi low cost</a></li>
+                            <li><a class="dropdown-item" href="#">viaggia con noi</a></li>
+                            <li><a class="dropdown-item" href="#"><button type="button" class="btn text-dark bg-info "
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        data-bs-whatever="@mdo">area personale</button></a></li>
+                            <li><a class="dropdown-item" href="#"> <button class="btn  bg-info border-0 "
+                                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                        aria-controls="offcanvasScrolling">
+                                        il nostro blog
+                                    </button></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="mt-5 pt-5 pb-5 mb-5  d-none d-md-block ">
+
+        <div id="carouselheader" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" data-bs-interval="3000">
+                <button type="button" data-bs-target="#carouselheader" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselheader" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselheader" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/header_01 resized.jpg" class="d-block w-100" alt="viaggi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>L’impulso del viaggio</h4>
+                        <p class="p_head">Viaggiare è una delle esperienze più belle e interessanti che si fanno durante la nostra
+                            vita.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/header_02 resized.jpg" class="d-block w-100" alt="viaggi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Viaggia felice</h4>
+                        <p class="p_head">Ci sono viaggi che possono cambiare la vita a molti di noi</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/header_03 resized.jpg" class="d-block w-100" alt="viaggi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Viaggiare rende modesti</h4>
+                        <p class="p_head">Ci sono molti cammini senza viaggiatori. Ma vi sono ancor più viaggiatori che non hanno un
+                            loro sentiero.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselheader" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselheader" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+    
+        <h2 class="mt-5 pt-5 border-bottom text-center d-none d-md-block">  I NOSTRI PIANI DI VIAGGIO </h2>
+    
+
+
+    <div id="prenota" class="container-fluid mt-4 pt-5">
+        <!-- ANTARTIDE -->
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/viaggio 1.avif" class="d-block w-100" alt="antartide">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/antartide 2.jpg" class="d-block w-100" alt="antartide">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/antartide 3.jpg" class="d-block w-100" alt="antartide">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div id="meta anno" class="card-body bg-info">
+                        <h5 class="card-title">ANTARTIDE</h5>
+                        <p class="card-text">Con i suoi circa 14 milioni di km², l'Antartide è il quarto continente più
+                            vasto della Terra dopo Asia, America e Africa ed è circondata dai tre oceani: Pacifico,
+                            Atlantico e Indiano.
+
+                            Tranne alcune aree molto limitate, l'Antartide è completamente ricoperta dalla calotta
+                            glaciale antartica, con uno spessore medio di 1600 metri; intorno a tutto il continente si
+                            estende inoltre la banchisa antartica. L'Antartide ha dunque il 98% del territorio coperto
+                            dai ghiacci e ciò la rende il continente più freddo e inospitale del pianeta: è l'unico in
+                            cui non vi sono abitanti stabili.</p>
+                        <a href="https://www.blueberrytravel.it/paese/antartide-isole-atlantico-meridionale/antartide/"
+                            target="_blank" class="btn btn-primary">vedi piano </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- CERVINO -->
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExampleInterval0" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/viaggio 2.avif" class="d-block w-100" alt="cervino">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/cervino 2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/cervino 3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval0"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval0"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info">
+                        <h5 class="card-title">CERVINO</h5>
+                        <p class="card-text">Con una prominenza di 1031 m (è necessario scendere fino al Col Durand,
+                            posto a 3451 m, per salire su vette più alte) e un isolamento di 13,7 km (la montagna più
+                            alta di esso più vicina è il Lyskamm Occidentale a quota 4481 m, nel massiccio del Monte
+                            Rosa), si erge isolato dal resto delle altre vette circostanti e sovrasta i paesi di
+                            Breuil-Cervinia a sud in Italia e di Zermatt a nord in Svizzera, note località turistiche
+                            estive e invernali.
+
+                            Caratterizzato dalla particolare forma piramidale molto pronunciata, ha segnato in modo
+                            significativo la storia dell'alpinismo.</p>
+                        <a href="#" class="btn btn-primary">vedi piano</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/viaggio 3.avif" class="d-block w-100" alt="monte">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/monte 2.webp" class="d-block w-100" alt="monte">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/monte 3.webp" class="d-block w-100" alt="monte">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info ">
+                        <h5 class="card-title">Monte La Pérouse</h5>
+                        <p class="card-text">Il monte Dagelet è una vetta ghiacciata di oltre 9.800 piedi (2.990 m)
+                            situata nella catena Fairweather dei Monti Saint Elias , nel sud-est dell'Alaska , negli
+                            Stati Uniti. La vetta si trova nel Parco nazionale di Glacier Bay , 7 km a sud del Monte
+                            Crillon e 6 km a nord-ovest del Monte La Perouse , che è la vetta più alta più vicina. Il
+                            rilievo topografico è significativo poiché la montagna si solleva dall'acqua della marea in
+                            meno di nove miglia, La montagna fu chiamata nel 1874 da William Healey Dall dell'US
+                            Geological Survey , in onore di Joseph Lepaute Dagelet </p>
+                        <a href="#" class="btn btn-primary">vedi piano</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/viaggio 4.avif" class="d-block w-100" alt="sarajevo">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/sarajevo 2.jpg" class="d-block w-100" alt="sarajevo">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/sarajevo 3.jpg" class="d-block w-100" alt="sarajevo">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info">
+                        <h5 class="card-title">SARAJEVO</h5>
+                        <p class="card-text">Sarajevo (in alfabeto cirillico Сарајево; in giudesmo Saraj; in turco
+                            Saraybosna), in italiano Saraievo (AFI: /saraˈjɛːvo/), è la più grande città nonché capitale
+                            della Bosnia ed Erzegovina.
+                            All'interno dei confini amministrativi dei quattro comuni che compongono la città vera e
+                            propria - (Stari Grad, Centar, Novi Grad e Novo Sarajevo) risiedono 275.569 abitanti (dato
+                            del 2013[1]) mentre l'area urbana arriva a comprendere una popolazione di oltre mezzo
+                            milione di abitanti includendo i comuni limitrofi di Ilidža, Hadžići, Vogošća e Ilijaš.</p>
+                        <a href="#" class="btn btn-primary">vedi piano</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid mt-4 pt-5">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/spagna 1.jpg" class="d-block w-100" alt="spagna">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/spagna 2.jpg" class="d-block w-100" alt="spagna">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/spagna 3.jpg" class="d-block w-100" alt="spagna">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info">
+                        <h5 class="card-title">spagna</h5>
+                        <p class="card-text">La Spagna (in spagnolo España; in basco Espainia; in catalano Espanya; in
+                            galiziano: España), il cui nome ufficiale è Regno di Spagna (in spagnolo Reino de España; in
+                            basco Espainiako Erresuma; in catalano Regne d'Espanya; in galiziano: Reino de España), è
+                            uno Stato sovrano, membro dell'Unione europea dal 1986. Monarchia costituzionale, la Spagna
+                            si trova all'estremità occidentale dell'Europa e occupa buona parte della superficie della
+                            penisola iberica. Ha una superficie di 505941 km²[1] e nel 2020 contava 47 431 256 abitanti.
+                            Confina a nord-est con la Francia (da cui è separata dalla catena dei Pirenei) e Andorra, a
+                            sud con il possedimento britannico di Gibilterra, a ovest con il Portogallo e, tramite le
+                            sue exclave di Ceuta e Melilla, con il Marocco.</p>
+                        <a href="#" class="btn btn-primary">vedi piano</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExampleInterval5" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/portogallo 1.jpg" class="d-block w-100" alt="portogallo">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/portogallo 2.png" class="d-block w-100" alt="portogallo">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/portogallo 3.jpg" class="d-block w-100" alt="portogallo">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval5"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval5"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info ">
+                        <h5 class="card-title">portogallo</h5>
+                        <p class="card-text">Il Portogallo (in portoghese: Portugal), ufficialmente Repubblica
+                            Portoghese, è uno Stato membro dell'Unione europea. È collocato nella posizione più
+                            occidentale fra tutti gli Stati dell'Europa continentale.
+
+                            Parte più occidentale della Penisola iberica, nell'Europa meridionale, affacciato
+                            sull'Oceano Atlantico, con circa 830 chilometri di coste a sud e a ovest, confina solo con
+                            la Spagna (Galizia a nord, Castiglia e León, Estremadura e Andalusia a est). Il suo
+                            territorio, corrispondente all'antica provincia romana di Lusitania, occupa una fascia di
+                            territorio lunga circa 700 km e larga 150/200 km che dai rilievi della Meseta iberica scende
+                            fino alla costa atlantica. L'ingresso nell'Unione europea è avvenuto, in contemporanea con
+                            la Spagna, il 1º gennaio 1986.</p>
+                        <a href="#" class="btn btn-primary">vedi piano</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExampleInterval6" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/italia 3.jpg" class="d-block w-100" alt="italia">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/italia 2.webp" class="d-block w-100" alt="italia">
+                            </div>
+                            <div class="carousel-item" data-bs-ride="carousel">
+                                <img src="./img/italia 1.jpg" class="d-block w-100" alt="italia">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval6"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval6"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info">
+                        <h5 class="card-title">italia</h5>
+                        <p class="card-text">L'Italia, ufficialmente Repubblica Italiana, è uno Stato membro dell'Unione
+                            europea, situato nell'Europa meridionale e occidentale, il cui territorio coincide in gran
+                            parte con l'omonima regione geografica. L'Italia è una repubblica conta una popolazione di
+                            circa 59 milioni di abitanti, che ne fanno il terzo Stato dell'Unione europea per numero di
+                            abitanti.
+
+                            Delimitata dall'arco alpino, l'Italia confina a nord, da ovest a est, con Francia, Svizzera,
+                            Austria e Slovenia; la penisola italiana si protende nel mar Mediterraneo, circondata dai
+                            mari Ligure, Tirreno, Ionio e Adriatico, e da numerose isole. Gli Stati della Città del
+                            Vaticano e di San Marino sono enclavi della Repubblica, mentre Campione d'Italia è
+                            un'exclave della Repubblica Italiana e un'enclave della Confederazione Svizzera</p>
+                        <a href="#" class="btn btn-primary">vedi paino</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div id="carouselExampleInterval7" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./img/francia 1.jpg" class="d-block w-100" alt="francia">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/francia 2.jpg" class="d-block w-100" alt="francia">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/francia 3.webp" class="d-block w-100" alt="francia">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval7"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval7"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body bg-info">
+                        <h5 class="card-title">francia</h5>
+                        <p class="card-text">La Francia, ufficialmente Repubblica francese, è uno Stato situato
+                            nell'Europa occidentale, ma che possiede ugualmente territori disseminati su più oceani e
+                            altri continenti. La Francia è una repubblica costituzionale unitaria, avente un regime
+                            semipresidenziale. Parigi è la capitale, la lingua ufficiale è il francese, le monete
+                            ufficiali sono l'euro e il franco CFP nei territori dell'oceano Pacifico. Il motto della
+                            Francia è «Liberté, Égalité, Fraternité» e la bandiera è costituita da tre bande verticali
+                            di uguali dimensioni di colore blu, bianco e rosso La parte europea della Francia è Francia
+                            metropolitana ed è situata ad una delle estremità occidentali dell'Europa. È bagnata dal
+                            Mare del Nord al nord, la Manica a nord-ovest, l'oceano Atlantico ad ovest e il mar
+                            Mediterraneo a sud-est. </p>
+                        <a href="#" class="btn btn-primary">vedi piano</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h2 class="mt-5 pt-5 m-lg-4 border-bottom text-center"> DETTAGLI</h2>
+
+    <div class="accordion mt-4 pt-5 m-3" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    CHI SIAMO
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    COME PRENOTARE UN VIAGGIO
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header ">
+                <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    DETTAGLIO COSTI
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <h2 class="mt-5 pt-5 m-lg-4 border-bottom text-center"> PRENOTA SUBITO</h2>
+
+    <section class="container mt-5 pt-5" id="contact">
+        <div class="col-12">
+            <form class="row">
+                <input class="col-12 mb-3 p-2 border-0  border-bottom" type="text" name="nome" placeholder="Nome">
+                <input class="col-12 mb-3 p-2 border-0 border-bottom" type="number" name="guest"
+                    placeholder="numero di traveller?" min="1">
+                <input id="giorno prenotazione" class="col-12 mb-3 p-2 border-0 border-bottom" type="datetime-local"
+                    name="data-prenotazione">
+                <input class="col-12 mb-3 p-2 border-0 border-bottom" type="text" name="messaggio" placeholder="Note">
+                <button class="col-12 mb-3 p-2 border-0 border-bottom bg-info "> INVIA PRENOTAZIONE</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="bg-black p-4 text-center mt-5 ">
+        <div style="color: white;">
+            powered by
+            <a class="text-decoration-none " href="#">Alessandro Prete</a>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Area Personale</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="col-form-label">password</label>
+                            <input type="password" class="form-control" id="password"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-info">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">accedi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="offcanvas offcanvas-bottom  bg-warning" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Il nostro BLOG</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum ad rem, illo ipsa vel officiis animi,
+            sint ullam voluptas esse odit asperiores, vitae sit error voluptatibus autem molestiae deleniti!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit necessitatibus recusandae impedit,
+            blanditiis excepturi perferendis nesciunt magni obcaecati modi eaque nam illum ipsa similique fuga laborum
+            quod. Fuga, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure doloremque temporibus
+            quaerat delectus, nobis a perspiciatis, expedita ab placeat sit asperiores culpa pariatur! Earum eius, minus
+            molestiae illum nihil autem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit
+            sequi hic nesciunt, sunt, voluptate nostrum nulla velit blanditiis corporis rem! Consectetur sapiente facere
+            quod necessitatibus, libero amet? Eaque, laborum!
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
